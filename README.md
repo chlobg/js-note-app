@@ -29,5 +29,5 @@ Suggested design:
 
 ## 📝 References
 
-https://javascript.info/async
-https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- https://javascript.info/async
+- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
