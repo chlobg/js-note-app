@@ -1,0 +1,226 @@
+/* ---------------- HEADER ---------------- */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header__icon {
+  width: 32px;
+  height: 32px;
+}
+.header__title {
+  font-size: 32px;
+  font-family: "Montserrat", sans-serif;
+  color: #1a1a1a;
+}
+.header__subtitle {
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+/* ---------------- NOTE ---------------- */
+.note {
+  margin: 40px auto;
+  max-width: 600px;
+  /* ---- Form ---- */
+  /* ---- List ---- */
+}
+.note__card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.note__label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+.note__input {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: vertical;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.note__button {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: background-color 0.3s ease;
+}
+.note__button:hover {
+  background-color: #3979c6;
+}
+.note__button img {
+  width: 18px;
+}
+.note__section {
+  margin-top: 40px;
+}
+.note__section-title {
+  font-size: 20px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+.note__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.note__item {
+  background-color: #ffffff;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border-left: 4px solid #4a90e2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+.note__meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+.note__delete {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.note__empty {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 48px 0;
+  gap: 12px;
+}
+.note__empty-icon {
+  width: 56px;
+  height: 56px;
+  opacity: 0.5;
+}
+.note__empty-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+.note__empty-subtitle {
+  font-size: 15px;
+  font-weight: 400;
+  color: #777777;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+/* Tablets*/
+@media screen and (max-width: 1024px) {
+  .header__title {
+    font-size: 28px;
+  }
+  .header__subtitle {
+    font-size: 15px;
+  }
+  .note__card {
+    padding: 28px;
+  }
+  .note__input {
+    font-size: 15px;
+  }
+  .note__button {
+    width: 100%;
+    justify-content: center;
+  }
+  .note__section-title {
+    font-size: 18px;
+  }
+}
+/* Mobiles */
+@media screen and (max-width: 430px) {
+  .header__title {
+    font-size: 24px;
+  }
+  .header__subtitle {
+    font-size: 14px;
+  }
+  .note__card {
+    padding: 20px;
+  }
+  .note__input {
+    padding: 12px;
+    font-size: 14px;
+    min-height: 100px;
+  }
+  .note__button {
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+  .note__section-title {
+    font-size: 16px;
+  }
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff8e6;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.page__background {
+  background-color: #f9fafa;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 0;
+  box-sizing: border-box;
+}
+
+.layout {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1024px) {
+  .layout {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .layout {
+    padding: 0 16px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

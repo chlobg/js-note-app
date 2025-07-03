@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page">
+    <div class="page__background">
+      <div class="layout">
+        <!-- Header -->
+        <header class="header">
+          <div class="header__container">
+            <img
+              src="assets/icons/note__icon--write.png"
+              alt="Write Icon"
+              class="header__icon"
+            />
+            <h1 class="header__title">My Notes</h1>
+          </div>
+          <p class="header__subtitle">Write and organize your thoughts</p>
+        </header>
+
+        <!-- Note Input Section -->
+        <main class="note">
+          <div class="note__card">
+            <label for="note" class="note__label">Write your note</label>
+            <textarea
+              id="note"
+              class="note__input"
+              placeholder="Start typing your note here..."
+            ></textarea>
+            <button class="note__button" id="saveNote">
+              <img
+                src="assets/icons/note__icon--save.png"
+                alt="Save icon"
+                class="note__icon"
+              />
+              Save Note
+            </button>
+          </div>
+
+          <!-- Note List Section -->
+          <section class="note__section">
+            <h2 class="note__section-title">Your Notes</h2>
+            <div class="note__list" id="noteList"></div>
+          </section>
+
+          <div class="note__empty" id="noteEmpty">
+            <img
+              src="assets/icons/note__icon--list.png"
+              alt="Empty list"
+              class="note__empty-icon"
+            />
+            <h3 class="note__empty-title">No notes yet</h3>
+            <p class="note__empty-subtitle">
+              Start by writing your first note above!
+            </p>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="js/note-app.js"></script>
+  </body>
+</html>
