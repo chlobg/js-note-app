@@ -26,7 +26,7 @@
   &__subtitle {
     font-size: 16px;
     color: #6b7280;
-    margin-top: 8px;
+    margin-top: 1px;
   }
 }
 
@@ -46,20 +46,24 @@
   &__label {
     display: block;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     color: $color-text;
     margin-bottom: 10px;
   }
 
   &__input {
     width: 100%;
-    padding: 16px;
+    //padding: 48px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 10px;
     resize: vertical;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 80px;
   }
 
   &__button {
@@ -134,7 +138,7 @@
   justify-content: center;
   text-align: center;
   padding: 48px 0;
-  gap: 12px;
+  //gap: 12px;
 
   &-icon {
     width: 56px;
