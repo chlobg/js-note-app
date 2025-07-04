@@ -1,12 +1,12 @@
 const noteInput = document.getElementById("note");
 const saveButton = document.getElementById("saveNote");
 const noteList = document.getElementById("noteList");
+const emptyMessage = document.getElementById("noteEmpty");
 
 document.addEventListener("DOMContentLoaded", loadNotes);
 
 saveButton.addEventListener("click", () => {
   const noteText = noteInput.value.trim();
-
   if (noteText === "") return;
 
   const note = {
@@ -20,6 +20,8 @@ saveButton.addEventListener("click", () => {
 
   addNoteToDOM(note);
   noteInput.value = "";
+
+  emptyMessage.style.display = "none";
 });
 
 function getNotes() {
@@ -29,7 +31,6 @@ function getNotes() {
 
 function loadNotes() {
   const notes = getNotes();
-  const emptyMessage = document.getElementById("noteEmpty");
 
   if (notes.length === 0) {
     emptyMessage.style.display = "flex";
@@ -71,6 +72,13 @@ noteList.addEventListener("click", (e) => {
 function deleteNote(id) {
   let notes = getNotes().filter((note) => note.id !== id);
   localStorage.setItem("notes", JSON.stringify(notes));
-  noteList.innerHTML = "";
-  loadNotes();
+
+  const noteElement = noteList.querySelector(
+    `.note__delete[data-id="${id}"]`
+  )?.parentElement;
+  if (noteElement) noteList.removeChild(noteElement);
+
+  if (notes.length === 0) {
+    emptyMessage.style.display = "flex";
+  }
 }
