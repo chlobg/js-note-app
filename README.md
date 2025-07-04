@@ -1,7 +1,6 @@
 # 📝 Note App
 
-A simple web application that allows users to create, display, and store notes directly in the browser using `localStorage`. No backend required — your data stays in your browser.
-
+A simple web application that allows users to create, display, and store notes directly in the browser using `localStorage`.
 ---
 
 ## 🚀 Features
